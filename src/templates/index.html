@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <center>
+  <h1>WebCat Print :3</h1>
+  <img src="/static/images/webcat.png"/>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <h2>{{ message }} <br/></h2>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <form action="/print" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" value="Print!"/>
+  </form>
+  </center>
+{% endblock %}
