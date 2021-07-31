@@ -1,5 +1,5 @@
 # webcat
-A web interface for conveniently printing images on BlueTooth thermal cat printers.
+A work-in-progress web interface for conveniently printing images on BlueTooth thermal cat printers.
 
 I can't guarantee this will work on all cat printers, but [this is the one I'm using](https://www.amazon.com/dp/B08YJXLZN1).
 
